@@ -38,16 +38,18 @@
 
 .footer-adress__list {
     @media screen and (min-width: 480px) {
-            margin-left: 109px;
+            text-align: center;
         }
     
         @media screen and (min-width: 768px) {
-            margin-left: 61px;
+            text-align: center;
+            margin-left: 76px;
         }
-    
-        @media screen and (min-width: 1200px) {
+
+       @media screen and (min-width: 1200px) {
+            text-align:start;
             margin-left: auto;
-        }
+       }
 }
 
 
@@ -63,14 +65,7 @@
     &:focus {
         color: $accent-color;
         }
-
-           @media screen and (min-width: 480px) {
-               justify-content: center;
-           }
-    
-           @media screen and (min-width: 768px) {
-               justify-content: center;
-    }}
+}
 
 .footer-adress__info {
     display: block;
@@ -89,13 +84,13 @@
             color: $accent-color;
         }
 
-                 @media screen and (min-width: 480px) {
-                     justify-content: center;
+                /* @media screen and (min-width: 480px) {
+                     text-align: center;
                  }
         
                  @media screen and (min-width: 768px) {
-                     justify-content: center;
-                 }
+                     text-align: center;
+                 }*/
                  
 }
 
