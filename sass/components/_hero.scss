@@ -1,0 +1,88 @@
+.hero {
+    background-color: var(--background-color);
+    display: flex;
+    text-align: center;
+    /*padding-top: 200px;
+    padding-bottom: 200px;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*height: 600px;
+    width: 1600px;*/
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/bc-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: 480px) {
+            width: 480px;
+            height: 400px;
+            padding-top: 118px;
+            padding-bottom: 118px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            width: 768px;
+            height: 400px;
+            padding-top: 118px;
+            padding-bottom: 118px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 1600px;
+            height: 600px;
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+}
+
+.hero__title {
+    /*width: 698px;*/
+    margin: 0 auto;
+    font-weight: 900;
+    /*font-size: 44px;
+    line-height: 1.36;*/
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $accent-white-color;
+    @media screen and (min-width: 480px) {
+            font-size: 26px;
+            line-height: 1.62;
+            width: 360px;
+        }
+    
+    @media screen and (min-width: 768px) {
+            font-size: 26px;
+            line-height: 1.62;
+            width: 360px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            line-height: 1.36;
+            width: 698px;
+        }
+}
+
+.hero__button {
+    margin-top: 30px;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+
+    color: $accent-white-color;
+    background: $accent-color;
+    border: 1px solid transparent;
+}
