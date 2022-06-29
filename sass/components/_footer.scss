@@ -64,7 +64,13 @@
         color: $accent-color;
         }
 
-}
+           @media screen and (min-width: 480px) {
+               justify-content: center;
+           }
+    
+           @media screen and (min-width: 768px) {
+               justify-content: center;
+    }}
 
 .footer-adress__info {
     display: block;
@@ -82,6 +88,15 @@
     &:focus {
             color: $accent-color;
         }
+
+                 @media screen and (min-width: 480px) {
+                     justify-content: center;
+                 }
+        
+                 @media screen and (min-width: 768px) {
+                     justify-content: center;
+                 }
+                 
 }
 
 
@@ -90,18 +105,18 @@
     @media screen and (min-width: 480px) {
             margin-top: 60px;
             margin-bottom: 60px;
-            margin-left: 122px;
+            margin-left: 124px;
         }
     
         @media screen and (min-width: 768px) {
-            margin-left: 165px;
+            margin-left: 137px;
             margin-top: 0px;
         }
     
         @media screen and (min-width: 1200px) {
             margin-left: 70px;
         }
-}
+    }
 
 .foot-second__title {
     margin-bottom: 20px;
@@ -113,9 +128,15 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $background-white;
- 
-
-    
+    @media screen and (min-width: 480px) {
+            justify-content: center;
+        }
+    @media screen and (min-width: 768px) {
+            justify-content: center;
+        }
+    @media screen and (min-width: 768px) {
+             justify-content:first baseline;
+        }
 }
 
 .soc-foot-list {
@@ -160,6 +181,7 @@
 
 .sharing-field {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .sharing__title {
@@ -174,7 +196,16 @@
             margin-right: 115px;
             margin-left: 115px;
         }
-  
+    @media screen and (min-width: 768px) {
+            margin-top: 60px;
+            margin-right: 267px;
+            margin-left: 267px;
+        }
+    @media screen and (min-width: 1200px) {
+             margin-top: 0px;
+             margin-right: 0px;
+             margin-left: auto;
+         }
 }
 
 .sharing-field__input {
@@ -213,17 +244,21 @@
            @media screen and (min-width: 768px) {
                 width: 450px;
                 height: 50px;
+                margin-right: 152px;
+                margin-left: 152px;
            }
     
            @media screen and (min-width: 1200px) {
                width: 358px;
                height: 50px;
+               margin-right: 0px;
+               margin-left: auto;
            }
 }
 
 
 .sharing-field__btn {
-    margin-left: 370px;
+    /*margin-left: 370px;*/
     width: 200px;
     height: 50px;
     background: $accent-color;
@@ -244,6 +279,25 @@
     cursor: pointer;
 
     transition: background-color 250ms var(--time-transition);
+
+    @media screen and (min-width: 480px) {
+            margin-top: 20px;
+            margin-right: 125px;
+            margin-left: 125px;
+        }
+
+    @media screen and (min-width: 768px) {
+            margin-top: 20px;
+            margin-right: 276px;
+            margin-left: 276px;
+        }
+     @media screen and (min-width: 1200px) {
+            margin-top: 0px;
+            margin-left: 12px;
+            margin-right: 0px;
+         }
+
+    
 }
 
 .sharing-field__icon {
