@@ -20,8 +20,8 @@
     
 <header class="header">
     <div class="container">
-    <nav class="nav">
         <a class="header__logo link" href="./index.html"><span class="logo-blue">Web</span>Studio</a>
+    <nav class="nav">
         <ul class="nav__list list">
             <li class="nav__item navig"><div class="header-navigation"><a href="" class="nav__link link current">Студия</a></div></li>
             <li class="nav__item"><a href="./portfolio.html" class="nav__link link">Портфолио</a></li>
@@ -41,6 +41,54 @@
             <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a></li>
     </ul>
+
+    <button type="button" class="header__open-btn">
+        <svg class="icon-header_menu_btn" width="40" height="40">
+        <use href="./images/icons.svg#icon-header_menu_btn"></use>
+        </svg>
+    </button>
+    </div>
+
+    <div class="mob-menu is-hidden">
+<div class="container">
+    <div class="mob-menu-top">
+        <button type="button" class="header__close-btn">
+            <svg class="icon-header-close-btn" width="40" height="40">
+                <use href="./images/icons.svg#icon-header-close-btn"></use>
+            </svg>
+        </button>
+
+        <ul class="mob-menu__list list">
+            <li class="mob-menu__item navig">
+                <div class="mob-navigation"><a href="" class="nav-mob__link link current">Студия</a></div>
+            </li>
+            <li class="mob-menu__item"><a href="./portfolio.html" class="nav-mob__link link">Портфолио</a></li>
+            <li class="mob-menu__item"><a href="" class="nav-mob__link link">Контакты</a></li>
+        </ul>
+        </div>
+        
+
+        <div class="mob-menu-bottom">
+        <ul class="mob-contact__list list">
+            <li class="mob-contact__item">
+                <a class="mob-tell__link link" href="tel:+380961111111">
+                    +38 096 111 11 11</a>
+            </li>
+            <li class="mob-contact__item">
+                <a class="mob-mail__link link" href="mailto:info@devstudio.com">
+                    info@devstudio.com</a>
+            </li>
+        </ul>
+
+        <ul class="header-soc-list list">
+            <li class="header-soc-item">Instagram</li>
+            <li class="header-soc-item">Twitter</li>
+            <li class="header-soc-item">Facebook</li>
+            <li class="header-soc-item">LinkedIn</li>
+        </ul>
+        </div>
+</div>
+
     </div>
 </header>
     
@@ -85,14 +133,20 @@
         </div>
     </section>
 
+    <!--<picture>
+                        <source srcset="
+                                        ./img/img1.jpg   1x,
+                                        ./img/img1-2x.jpg 2x
+                                      " media="(min-width: 1200px)" />
+                        <img src="./images/img1.jpg" alt="Desktop Applications" width="370" height="294" />
+                    </picture>-->
+
     <section class="about section">
         <div class="container">
         <h2 class="about__title">Чем мы занимаемся</h2>
         <ul class="pic-list list">
             <li class="pic-list__item">
-                <img src="./images/img1.jpg" alt="Desktop Applications"
-                width="370"
-                height="294"/>
+                <img src="./images/img1.jpg" alt="Desktop Applications" width="370" height="294" />
                 <p class="pic-list__top-text">Десктопные приложения</p>
             </li>
             <li class="pic-list__item">
@@ -116,13 +170,25 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team-list list">
             <li class="team-list__item"> 
-                <img class="portreit" src="./images/img.Igor.jpg" alt="Portrait of Igor"
-                width="270"
-                height="260"/>
-
+                <picture>
+                    <source srcset="./img/Igor-1.jpg 1x,
+                                    ./img/Igor-2.jpeg 2x
+                                  " media="(min-width: 1200px)" />
+                    <source srcset="
+                                    .   1x,
+                                    . 2x
+                                  " media="(min-width: 768px)" />
+                    <source srcset="
+                                    .   1x,
+                                    . 2x
+                                  " media="(min-width: 320px)" />
+                <img src="./img/Igor-1.jpg" alt="Portrait of Igor" width="270" height="260" />
+                </picture>
+                
                 <div class="card-team">
                 <h3 class="card-team__text">Игорь Демьяненко</h3>
-                <p class="card-team__position">Product Designer</p>
+                <p class="card-team__position">Product Designer</p> 
+                
                 
                 <ul class="soc-list list">
                     <li class="soc-list__item">
@@ -460,5 +526,6 @@
     </div>
     </div>
 <script src="./js/modal.js"></script>
+<script src="./js/menu.js"></script>
 </body>
 </html>
