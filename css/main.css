@@ -298,6 +298,7 @@ img {
   width: 100vw;
   height: 100vh;
   padding-bottom: 48px;
+  z-index: 1;
 }
 .mob-menu .container {
   display: flex;
@@ -1163,8 +1164,26 @@ img {
 }
 
 .suggestions {
-  padding-top: 100px;
-  padding-bottom: 94px;
+  /*padding-top: 100px;
+  padding-bottom: 94px;*/
+}
+@media screen and (min-width: 480px) {
+  .suggestions {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .suggestions {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .suggestions {
+    padding-top: 100px;
+    padding-bottom: 94px;
+  }
 }
 
 .suggestions-list__button {
