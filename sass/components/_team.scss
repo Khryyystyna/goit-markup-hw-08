@@ -82,7 +82,25 @@
     display: flex;
     justify-content: center;
     list-style: none;
-}
+    @media screen and (min-width: 480px) {
+            font-size: 28px;
+            line-height: 1.18;
+            margin-bottom: 24px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            font-size: 28px;
+            line-height: 1.18;
+            margin-bottom: 24px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 36px;
+            line-height: 1.17;
+            margin-bottom: 30px;
+        }
+    }
+
 
 .soc-list__item {
     width: 44px;
@@ -120,14 +138,12 @@
     overflow: hidden;
     background: $background-white;
     width: 450px;
-    height: 162px;
+    
     @media screen and (min-width: 768px) {
             width: 354px;
-            height: 162px;
         }
     
         @media screen and (min-width: 1200px) {
             width: 270px;
-            height: 168px;
         }
 }

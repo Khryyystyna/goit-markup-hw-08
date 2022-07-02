@@ -66,8 +66,8 @@
 }
 
 .header__logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    /*padding-top: 24px;
+    padding-bottom: 25px;*/
     /*margin-right: 93px;*/
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -76,12 +76,22 @@
     line-height: 1.19;
     color: $primary-text-color;
 
+    @media screen and (min-width: 480px) {
+        margin-right: 88px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+       }
+
     @media screen and (min-width: 768px) {
             margin-right: 88px;
+            padding-top: 26px;
+            padding-bottom: 26px;
         }
     
     @media screen and (min-width: 1200px) {
             margin-right: 93px;
+            padding-top: 24px;
+            padding-bottom: 25px;
         }
 
 }
@@ -123,8 +133,7 @@
 
 .info-list__link {
     /*padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 30px;*/
+    padding-bottom: 32px;*/
     font-weight: 500;
     /*line-height: 1.14;*/
     letter-spacing: 0.02em;
@@ -151,12 +160,13 @@
         @media screen and (min-width: 1200px) {
             padding-top: 32px;
             padding-bottom: 32px;
-            padding-left: 30px;
-            margin-left: 0px;
+            margin-left: 30px;
             font-size: 14px;
             line-height: 1.14;
+        
         }
     }
+
 
 .current {
     color: $accent-color;

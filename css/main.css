@@ -166,8 +166,8 @@ img {
 }
 
 .header__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  /*padding-top: 24px;
+  padding-bottom: 25px;*/
   /*margin-right: 93px;*/
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -176,14 +176,25 @@ img {
   line-height: 1.19;
   color: #212121;
 }
+@media screen and (min-width: 480px) {
+  .header__logo {
+    margin-right: 88px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 @media screen and (min-width: 768px) {
   .header__logo {
     margin-right: 88px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header__logo {
     margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 
@@ -217,8 +228,7 @@ img {
 
 .info-list__link {
   /*padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left: 30px;*/
+  padding-bottom: 32px;*/
   font-weight: 500;
   /*line-height: 1.14;*/
   letter-spacing: 0.02em;
@@ -243,8 +253,7 @@ img {
   .info-list__link {
     padding-top: 32px;
     padding-bottom: 32px;
-    padding-left: 30px;
-    margin-left: 0px;
+    margin-left: 30px;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -582,13 +591,12 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: rgba(47, 48, 58, 0.8);
-  padding-top: 27px;
-  padding-bottom: 27px;
   height: 70px;
   transform: translateY(-100%);
 }
 
 .pic-list__item {
+  height: 294px;
   margin-right: 30px;
 }
 .pic-list__item:nth-child(3n) {
@@ -694,6 +702,27 @@ img {
   justify-content: center;
   list-style: none;
 }
+@media screen and (min-width: 480px) {
+  .soc-list {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .soc-list {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .soc-list {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 30px;
+  }
+}
 
 .soc-list__item {
   width: 44px;
@@ -728,18 +757,15 @@ img {
   overflow: hidden;
   background: #FFFFFF;
   width: 450px;
-  height: 162px;
 }
 @media screen and (min-width: 768px) {
   .card-team {
     width: 354px;
-    height: 162px;
   }
 }
 @media screen and (min-width: 1200px) {
   .card-team {
     width: 270px;
-    height: 168px;
   }
 }
 
@@ -796,7 +822,6 @@ img {
   height: 92px;*/
   border: 1px solid #AFB1B8;
   border-radius: 4px;
-  padding: 16px 32px;
   transition: border 250ms var(--time-transition);
   /*margin-right: 30px;
       &:nth-child(6n) {
@@ -965,6 +990,7 @@ img {
 @media screen and (min-width: 1200px) {
   .foot-second {
     margin-left: 70px;
+    margin-bottom: 0px;
   }
 }
 
@@ -991,7 +1017,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .foot-second__title {
-    justify-content: first baseline;
+    justify-content: flex-start;
   }
 }
 
@@ -1181,7 +1207,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .suggestions {
-    padding-top: 100px;
+    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
@@ -1268,7 +1294,6 @@ img {
 @media screen and (min-width: 1200px) {
   .suggestions-menu {
     margin-right: calc(-1 * var(--card-set-gap));
-    margin-top: calc(-1 * var(--card-set-gap));
   }
 }
 
