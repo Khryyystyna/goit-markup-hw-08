@@ -94,6 +94,7 @@ img {
 .header {
   background: #FFFFFF;
   border-bottom: 1px solid #ECECEC;
+  width: 100%;
 }
 .header > .container {
   display: flex;
@@ -226,6 +227,15 @@ img {
   fill: currentColor;
 }
 
+.info-list__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .info-list__item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
 .info-list__link {
   /*padding-top: 32px;
   padding-bottom: 32px;*/
@@ -245,6 +255,7 @@ img {
   .info-list__link {
     padding: auto;
     margin-left: 84px;
+    /*margin-bottom: 10px;*/
     font-size: 12px;
     line-height: 1.17;
   }
@@ -389,8 +400,9 @@ img {
 }
 @media screen and (min-width: 480px) {
   .hero {
-    width: 480px;
-    height: 400px;
+    width: 100%;
+    /*width: 480px;
+    height: 400px;*/
     padding-top: 118px;
     padding-bottom: 118px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bc-hero-mob-1x.jpg);
@@ -526,7 +538,7 @@ img {
   background-color: #F5F4FA;
   /*width: 270px;
   height: 120px;*/
-  width: 450px;
+  /*width: 450px;*/
   height: 120px;
 }
 @media screen and (min-width: 768px) {
@@ -756,7 +768,6 @@ img {
   border-radius: 0px 0px 4px 4px;
   overflow: hidden;
   background: #FFFFFF;
-  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .card-team {
@@ -849,7 +860,7 @@ img {
 }
 
 .clients-list__item {
-  width: 210px;
+  /*width: 210px;*/
   height: 92px;
 }
 @media screen and (min-width: 768px) {
@@ -1015,7 +1026,7 @@ img {
     justify-content: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .foot-second__title {
     justify-content: flex-start;
   }

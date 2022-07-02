@@ -22,6 +22,7 @@
         }*/
 
     width: 100%;
+     
         @media screen and (min-width: 768px) {
             width: calc((100% - 30px) / 2);
         }
@@ -38,7 +39,7 @@
     background-color: $background-top-color;
     /*width: 270px;
     height: 120px;*/
-    width: 450px;
+    /*width: 450px;*/
     height: 120px;
     @media screen and (min-width: 768px) {
         width: 354px;
