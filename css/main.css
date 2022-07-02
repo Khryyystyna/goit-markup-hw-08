@@ -179,7 +179,6 @@ img {
 }
 @media screen and (min-width: 480px) {
   .header__logo {
-    margin-right: 88px;
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -236,6 +235,10 @@ img {
   }
 }
 
+.info-list {
+  margin-left: auto;
+}
+
 .info-list__link {
   /*padding-top: 32px;
   padding-bottom: 32px;*/
@@ -253,9 +256,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .info-list__link {
-    padding: auto;
-    margin-left: 84px;
-    /*margin-bottom: 10px;*/
+    padding-top: 20px;
+    margin-left: auto;
     font-size: 12px;
     line-height: 1.17;
   }

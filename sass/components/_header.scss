@@ -78,7 +78,6 @@
     color: $primary-text-color;
 
     @media screen and (min-width: 480px) {
-        margin-right: 88px;
         padding-top: 16px;
         padding-bottom: 16px;
        }
@@ -135,6 +134,9 @@
         }
 }
 
+.info-list {
+    margin-left: auto;
+}
 
 .info-list__link {
     /*padding-top: 32px;
@@ -148,17 +150,14 @@
     justify-content: center;
     transition: color 250ms var(--time-transition);
 
-
     &:hover,
     &:focus {
         color: $accent-color;
         }
     
-
         @media screen and (min-width: 768px) {
-           padding: auto;
-           margin-left: 84px;
-           /*margin-bottom: 10px;*/
+           padding-top: 20px;
+           margin-left: auto;
            font-size: 12px;
            line-height: 1.17;
         }
@@ -173,6 +172,7 @@
         }
     }
 
+    
 
 
 .current {
