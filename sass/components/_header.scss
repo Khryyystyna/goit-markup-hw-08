@@ -2,8 +2,7 @@
     background: $background-white;
     border-bottom: 1px solid #ECECEC;
     width: 100%;
-    margin: 0 auto;
-     .container {
+    > .container {
             display: flex;
             align-items: center;
         }
@@ -11,7 +10,6 @@
  
 .nav {
     display: none;
-    /*display: flex;*/
     @media screen and (min-width: 480px) {
             display: none;
         }
@@ -30,12 +28,10 @@
 }
 
 .info-list {
-    /*display: none;*/
-    width: 100%;
+    display: none;
     align-items: center;
     margin-left: auto;
-    display: none;
-        @media screen and (min-width: 480px) {
+       @media screen and (min-width: 480px) {
             display: none;
         }
     
@@ -82,6 +78,7 @@
     color: $primary-text-color;
 
     @media screen and (min-width: 480px) {
+        margin-right: 88px;
         padding-top: 16px;
         padding-bottom: 16px;
        }
@@ -131,6 +128,7 @@
     fill: currentColor;
 }
 
+
 .info-list__item:not(:last-child) {
     margin-bottom: 10px;
     @media screen and (min-width: 1200px) {
@@ -139,7 +137,7 @@
 }
 
 
-.info-list__item {
+.info-list__link {
     /*padding-top: 32px;
     padding-bottom: 32px;*/
     font-weight: 500;
@@ -148,41 +146,32 @@
     color: $title-text-color;
     display: flex;
     align-items: center;
+    justify-content: center;
     transition: color 250ms var(--time-transition);
-    margin-left: auto;
-    width: 100%;
+
 
     &:hover,
     &:focus {
         color: $accent-color;
         }
     
+
         @media screen and (min-width: 768px) {
+           margin-left: 84px;
            font-size: 12px;
            line-height: 1.17;
         }
        
 
         @media screen and (min-width: 1200px) {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            margin-left: 30px;
             font-size: 14px;
             line-height: 1.14;
         }
     }
 
-        .info-list__link-mail {
-            display: flex;
-            margin-left: auto;
-            padding-top: 32px;
-            padding-bottom: 32px;
-        }
-
-        .info-list__link-tell {
-            display: flex;
-            margin-left: 30px;
-            padding-top: 32px;
-            padding-bottom: 32px;
-                }
-    
 
 
 .current {
